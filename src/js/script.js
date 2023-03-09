@@ -16,3 +16,10 @@ menuLinks.forEach(elem => {
     menu.classList.remove('active');
   });
 });
+
+const percentage = document.querySelectorAll('.skills__line-percentage');
+const yellowLines = document.querySelectorAll('.skills__line-yellow');
+
+yellowLines.forEach((item, i) => {
+  item.style.width = percentage[i].textContent;
+});
